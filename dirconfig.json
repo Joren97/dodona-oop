@@ -2,5 +2,7 @@
   "evaluation": {
     "handler": "csharp"
   },
-  "programming_language": "csharp"
+  "programming_language": "csharp",
+  "author": "Joren Synaeve <joren.synaeve@thomasmore.be>",
+  "contact": "joren.synaeve@thomasmore.be"
 }
