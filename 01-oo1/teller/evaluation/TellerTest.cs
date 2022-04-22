@@ -1,21 +1,22 @@
-using Xunit;
+using NUnit.Framework;
 using teller_models;
+
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 
 namespace teller_models.Tests
 {
+    [TestFixture]
     public class TellerTests
     {
-        [Fact()]
+        [Test]
         public void TellerTest()
         {
             var teller = new Teller();
             Assert.Equal(0, teller.Waarde);
         }
 
-        [Fact()]
+        [Test]
         public void VerhoogTest()
         {
             var teller = new Teller();
@@ -23,7 +24,7 @@ namespace teller_models.Tests
             Assert.Equal(1, teller.Waarde);
         }
 
-        [Fact()]
+        [Test]
         public void VerlaagTest()
         {
             var teller = new Teller();
@@ -31,7 +32,7 @@ namespace teller_models.Tests
             Assert.Equal(-1, teller.Waarde);
         }
 
-        [Fact()]
+        [Test]
         public void ResettenTest()
         {
             var teller = new Teller();
@@ -42,7 +43,7 @@ namespace teller_models.Tests
             Assert.Equal(0, teller.Waarde);
         }
 
-        [Fact()]
+        [Test]
         public void ToonGegevensTest()
         {
             var teller = new Teller();
