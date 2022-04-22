@@ -13,7 +13,7 @@ namespace teller_models.Tests
         public void TellerTest()
         {
             var teller = new Teller();
-            Assert.Equal(0, teller.Waarde);
+            Assert.AreEqual(0, teller.Waarde);
         }
 
         [Test]
@@ -21,7 +21,7 @@ namespace teller_models.Tests
         {
             var teller = new Teller();
             teller.Verhoog();
-            Assert.Equal(1, teller.Waarde);
+            Assert.AreEqual(1, teller.Waarde);
         }
 
         [Test]
@@ -29,7 +29,7 @@ namespace teller_models.Tests
         {
             var teller = new Teller();
             teller.Verlaag();
-            Assert.Equal(-1, teller.Waarde);
+            Assert.AreEqual(-1, teller.Waarde);
         }
 
         [Test]
@@ -40,7 +40,7 @@ namespace teller_models.Tests
             teller.Verhoog();
             teller.Verhoog();
             teller.Resetten();
-            Assert.Equal(0, teller.Waarde);
+            Assert.AreEqual(0, teller.Waarde);
         }
 
         [Test]
