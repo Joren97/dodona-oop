@@ -47,7 +47,7 @@ namespace teller_models.Tests
         public void ToonGegevensTest()
         {
             var teller = new Teller();
-            Assert.Contains("Waarde van teller is 0", teller.ToonGegevens());
+            StringAssert.Contains("Waarde van teller is 0", teller.ToonGegevens());
         }
     }
 }
